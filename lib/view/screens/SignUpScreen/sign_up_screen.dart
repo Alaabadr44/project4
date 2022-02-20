@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../../widgets/bottons.dart';
 import '../../widgets/text_from_field.dart';
 import '../../widgets/text_widgets.dart';
+import '../mainPage/main_page.dart';
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({Key? key}) : super(key: key);
@@ -126,6 +127,8 @@ class SignUpScreen extends StatelessWidget {
                           onPressed: () {
                             if (_key.currentState!.validate()) {
                               // do this
+
+                              Get.toNamed(HomeScreen.routeName);
                             }
                           },
                         ),

@@ -4,7 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'helper/dio_helper.dart';
 import 'route/route.dart';
-import 'view/screens/mainPage/main_page.dart';
+import 'view/screens/loginScreen/loign_screen.dart';
 
 void main() {
   DioHelper.init();
@@ -25,9 +25,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        // home: const LoginScreen(),
-        // home: const SignUpScreen(),
-        home: const HomeScreen(),
+        home: const LoginScreen(),
       ),
     );
   }
